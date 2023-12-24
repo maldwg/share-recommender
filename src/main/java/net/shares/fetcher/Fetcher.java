@@ -1,9 +1,10 @@
 package net.shares.fetcher;
 
+import io.smallrye.mutiny.Uni;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
-import net.shares.share.Share;
+import yahoofinance.Stock;
 
 
 @Path("/api/fetch")
@@ -12,8 +13,9 @@ public class Fetcher {
 	
 	@GET
 	@Path("/{identifier}")
-	public String fetchShare(String Identifier){
-		return fetchService.fetch(Identifier);
+	public Stock fetchShare(String identifier){
+		System.out.print(identifier);
+		return fetchService.fetch(identifier);
 	}
 	
 }

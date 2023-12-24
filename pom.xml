@@ -28,10 +28,15 @@
     </dependencies>
   </dependencyManagement>
   <dependencies>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-resteasy</artifactId>
-    </dependency>
+<dependency>
+    <groupId>com.yahoofinance-api</groupId>
+    <artifactId>YahooFinanceAPI</artifactId>
+    <version>3.17.0</version>
+</dependency>
+ <dependency>
+    <groupId>io.quarkus</groupId>
+    <artifactId>quarkus-resteasy-reactive</artifactId>
+</dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-arc</artifactId>
